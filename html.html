@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="./CSS/all.min.css">
+    <link rel="stylesheet" href="./CSS/style.css" >
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Start   Header Section -->
+<header>
+  <nav class="navbar navbar-expand-lg bg-dark py-4 ">
+    <div class="container">
+      <a class="navbar-brand d-flex" href="#">
+        <img src="./images/logo.png" alt="Our logo">
+        <div class="logo-desc ms-3 mt-3">
+          <h5>Weather</h5>
+          <p>tagline goes here</p>
+        </div>
+      </a>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active home" aria-current="page" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-disabled="true">Live Cameras</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-disabled="true">Photos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">Contact</a>
+          </li>
+        </ul>
+      
+      </div>
+    </div>
+  </nav>
+</header>
+  <!-- End   Header   Section -->
+
+  <!-- Start   Main    Section -->
+<div class="search-sec  py-5" id="location">
+    <div class="container">
+        <form>
+            <input class="my-2" type="text" placeholder="Find Your Location..." id="search" >
+            <input type="button" value="Find" id="find" >
+       </form>
+    <div class="main mt-5">
+        <div class="weather-sec row g-0 container1 mx-auto">
+        <div class="col-lg-4">
+                <div class="days" id="day1">
+                    <p class="date d-flex text-secondary ps-2 pe-2"><span id="today" class="me-auto">Monday</span> <span id="today-dt">15January</span></p>
+                    <div class="desc ps-4">
+                        <h4 id="city" class="text-white text-secondary py-4"></h4>
+                     <div class="d-flex m-auto">
+                      <h2 id="today-dg" class="degree text-white py-3 mb-2 me-5">℃</h2>
+                      <img id="weater-img" class="me-4 w-25" src="./images/113.webp">
+                     </div>
+                         <div id="type" class="type text-info"></div>
+                         <div class="more mt-4 mb-4 py-3 w-75">
+                           <i class="fa-solid fa-umbrella">   <span id="humidty" class="me-4"> 20%</span></i>
+                          <i class="fa-solid fa-wind">  <span id="wind" class="me-4"> 18km/h </span></i>
+                           <i class="fa-solid fa-location-crosshairs"> <span id="direction" class="me-4"> East</span></i>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div class="col-lg-4">
+   <div class="next-days" id="day2">
+    <p class="date d-flex text-secondary justify-content-center next-dates">second day</p>
+     <div class="desc ps-4 text-center">
+        <img class="next-img mt-5 mb-3" src="./images/113.webp" alt="heat"/>
+      
+         <h3 class="next-day-dg mb-3 degree1 text-white">℃</h3>
+         <h6 class="next-day-dg2 mb-5 degree2 text-white">℃</h6>
+         <div class="next-day-type text-info w-type">Clear</div>
+     
+     </div>
+        </div>
+        </div>
+       <div class="col-lg-4">
+            <div class="next-days" id="day3">
+            <p class="date d-flex text-secondary justify-content-center next-dates">third day</p>
+              <div class="desc ps-4 text-center">
+              <img class="next-img mt-5 mb-3" src="./images/113.webp" alt="heat"/>                  
+              <h3 class="next-day-dg mb-3 degree1 text-white">℃</h3>
+              <h6 class="next-day-dg2 mb-5 degree2 text-white">℃</h6>
+              <div class="next-day text-info w-type">Clear</div>  
+             </div>
+             
+      </div> 
+       </div>
+ </div>
+    </div>
+    </div>
+    </div>
+  <!-- End   Main   Section -->
+
+  <!-- Start  Footer   Section -->
+<footer class="py-5">
+  <div class="container">
+    <form>
+      <input class="my-2" type="email" placeholder="Enter Your Email to subscribe..." id="urEmail" >
+      <input type="button" value="Find" id="subscribe" >
+  </form>
+  <div class="social-media mt-3 text-center fs-6 ">
+    <a class="me-5"><i class="fa-brands fa-facebook-f"></i></a>
+    <a class="me-5"><i class="fa-brands fa-twitter"></i></a>
+    <a class="me-5"><i class="fa-brands fa-google-plus-g"></i></a>
+    <a class="me-5"><i class="fa-brands fa-pinterest-p"></i></a>
+</div>
+<div class="copy-right text-center mt-4 text-light">
+  <small>Copyright 2014 Company name. Designed by Themezy. All rights reserved</small>
+</div> </div>
+</footer>
+
+<script src="./JS/bootstrap.bundle.min.js"></script>
+<script src="./JS/script.js"></script>
+</body>
+</html>
